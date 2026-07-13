@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Novais — Product Design Leader</title>
+  <meta name="description" content="Gabriel Novais is a Product Design Manager leading high-impact design teams and driving UX strategy." />
+  <link rel="canonical" href="https://novais.tech/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://novais.tech/" />
+  <meta property="og:title" content="Gabriel Novais — Product Design Leader" />
+  <meta property="og:description" content="17+ years in design and product strategy. Building design organizations that ship measurable impact — AI-powered UX, NPS programs, and continuous discovery." />
+  <meta property="og:image" content="https://novais.tech/assets/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23050507%22/><text x=%2250%22 y=%2268%22 font-size=%2248%22 font-family=%22system-ui%22 font-weight=%22700%22 fill=%22%234f8eff%22 text-anchor=%22middle%22>GN</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ─── NAV ─── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo magnetic" data-sound="click">GN</a>
+      <ul class="nav-links">
+        <li><a href="#work"    class="nav-link magnetic" data-sound="hover">Work</a></li>
+        <li><a href="#lead"    class="nav-link magnetic" data-sound="hover">Leadership</a></li>
+        <li><a href="#contact" class="nav-link magnetic" data-sound="hover">Contact</a></li>
+      </ul>
+      <button class="sound-toggle magnetic" id="soundToggle" aria-label="Toggle sound" title="Sound on/off">
+        <span class="sound-icon" id="soundIcon">♪</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-fade">Product Design Leader</p>
+      <h1 class="hero-title">
+        <span class="hero-line">Gabriel</span>
+        <span class="hero-line hero-name-accent">Novais.</span>
+      </h1>
+      <p class="hero-sub reveal-fade">
+        I build design organizations that ship<br />
+        <span class="typewriter" id="typewriter"></span>
+      </p>
+      <div class="hero-cta reveal-fade">
+        <a href="#work" class="btn btn-primary magnetic" data-sound="click">See my work</a>
+        <a href="#contact" class="btn btn-ghost magnetic" data-sound="click">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <p class="section-label reveal-up">About</p>
+          <h2 class="section-title reveal-up">
+            Design is strategy<br />made visible.
+          </h2>
+          <p class="about-body reveal-up">
+            I'm a Product Design Manager with 17+ years across design, advertising, and product
+            strategy. Currently at <strong>TownSq</strong> (Associa ecosystem), building a
+            design-driven culture on a platform serving 9.5M+ residents across North America.
+            Previously in design leadership at <strong>TradersClub</strong> and <strong>Binance</strong>.
+          </p>
+          <p class="about-body reveal-up">
+            I've worked across Brazil, the US, and Australia, in Fintech, PropTech, EdTech, and
+            B2B/B2C — leading teams through critical redesigns, AI integration, and NPS transformations.
+          </p>
+        </div>
+        <div class="about-right">
+          <div class="stat-card reveal-scale" data-sound="hover">
+            <span class="stat-number" data-count="17">0</span><span class="stat-plus">+</span>
+            <p class="stat-label">Years in design & product strategy</p>
+          </div>
+          <div class="stat-card reveal-scale" data-sound="hover">
+            <span class="stat-number" data-count="20">0</span><span class="stat-plus">+</span>
+            <p class="stat-label">Designers led across teams</p>
+          </div>
+          <div class="stat-card reveal-scale" data-sound="hover">
+            <span class="stat-number" data-count="20">0</span><span class="stat-plus">M+</span>
+            <p class="stat-label">People reached across the ecosystem</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="philosophy-row">
+        <div class="phil-card reveal-up magnetic" data-sound="hover">
+          <div class="phil-icon">◈</div>
+          <h3>Systems over screens</h3>
+          <p>Great design scales through consistent systems, not one-off solutions.</p>
+        </div>
+        <div class="phil-card reveal-up magnetic" data-sound="hover">
+          <div class="phil-icon">⟳</div>
+          <h3>Discovery is ongoing</h3>
+          <p>Continuous Discovery keeps teams close to users and away from expensive assumptions.</p>
+        </div>
+        <div class="phil-card reveal-up magnetic" data-sound="hover">
+          <div class="phil-icon">⚡</div>
+          <h3>Impact over craft</h3>
+          <p>Beautiful work that doesn't move the needle is decoration. I ship for outcomes.</p>
+        </div>
+        <div class="phil-card reveal-up magnetic" data-sound="hover">
+          <div class="phil-icon">◎</div>
+          <h3>AI amplifies humans</h3>
+          <p>I integrate AI into design workflows to multiply team capacity, not replace judgment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WORK ─── -->
+  <section class="work section" id="work">
+    <div class="container">
+      <p class="section-label reveal-up">Selected Work</p>
+      <h2 class="section-title reveal-up">Cases that moved the needle.</h2>
+    </div>
+
+    <!-- Case: Product Simplification / Requests + AI (flagship) -->
+    <div class="case" id="case-requests">
+      <div class="case-bg case-bg-3"></div>
+      <div class="container case-inner">
+        <div class="case-meta reveal-up">
+          <span class="case-tag">Featured Case</span>
+          <span class="case-tag">Product Discovery</span>
+          <span class="case-tag">AI Integration</span>
+          <span class="case-tag">UX Strategy</span>
+        </div>
+        <div class="case-content-grid">
+          <div class="case-text">
+            <h3 class="case-title reveal-up">AI Suggested Reply<br /><em>It's not just AI. It's AI with purpose.</em></h3>
+            <p class="case-body reveal-up">
+              Data-driven discovery pointed to TownSq's most painful high-volume feature — Requests —
+              and AI became the answer: context-aware draft responses that help managers reply
+              faster and better, for 9.5M+ residents.
+            </p>
+            <div class="case-results reveal-up">
+              <div class="result-chip">
+                <span class="result-num">89%</span>
+                <span class="result-label">faster manager response times</span>
+              </div>
+              <div class="result-chip">
+                <span class="result-num">+50%</span>
+                <span class="result-label">NPS in communities using enhanced Requests</span>
+              </div>
+              <div class="result-chip">
+                <span class="result-num">−30%</span>
+                <span class="result-label">support tickets for lost or missed requests</span>
+              </div>
+            </div>
+            <a href="case-requests.html" class="btn btn-ghost case-link-btn reveal-up magnetic" data-sound="click">Read the full case →</a>
+          </div>
+          <div class="case-visual reveal-scale">
+            <div class="case-mockup case-mockup-ai">
+              <div class="mock-screen">
+                <div class="mock-bar"></div>
+                <div class="ai-chat">
+                  <div class="ai-msg ai-msg-in">The gate light has been broken for two weeks. Who is handling this?</div>
+                  <div class="ai-msg ai-msg-out">
+                    <span class="ai-badge">AI Suggested Reply</span>
+                    Hi! Your request #4821 was assigned to maintenance yesterday — the repair is scheduled for Thursday. I'll keep you posted here.
+                  </div>
+                  <div class="ai-actions">
+                    <button class="ai-btn">Send</button>
+                    <button class="ai-btn ai-btn-ghost">Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case: NPS Program -->
+    <div class="case case-alt" id="case-nps">
+      <div class="case-bg case-bg-1"></div>
+      <div class="container case-inner">
+        <div class="case-meta reveal-up">
+          <span class="case-tag">UX Strategy</span>
+          <span class="case-tag">Research</span>
+          <span class="case-tag">Cross-functional</span>
+        </div>
+        <div class="case-content-grid">
+          <div class="case-text">
+            <h3 class="case-title reveal-up">NPS Program<br /><em>From noise to signal</em></h3>
+            <p class="case-body reveal-up">
+              Built TownSq's NPS program from the ground up — 9 active surveys across US, Brazil,
+              and Canada, cross-referenced with Voice-of-Customer data to turn scattered feedback
+              into executive-level product intelligence.
+            </p>
+            <div class="case-outcome reveal-up">
+              <span class="outcome-label">Outcome</span>
+              <span class="outcome-text">Usability complaints down 126 → 27 mentions; flagship survey up 11 NPS points year over year</span>
+            </div>
+            <a href="case-nps.html" class="btn btn-ghost case-link-btn reveal-up magnetic" data-sound="click">Read the full case →</a>
+          </div>
+          <div class="case-visual reveal-scale">
+            <div class="case-mockup case-mockup-nps">
+              <div class="mock-screen">
+                <div class="mock-bar"></div>
+                <div class="mock-chart">
+                  <div class="bar-chart">
+                    <div class="bar b1" style="--h: 40%"></div>
+                    <div class="bar b2" style="--h: 55%"></div>
+                    <div class="bar b3" style="--h: 48%"></div>
+                    <div class="bar b4" style="--h: 72%"></div>
+                    <div class="bar b5" style="--h: 65%"></div>
+                    <div class="bar b6" style="--h: 88%"></div>
+                  </div>
+                </div>
+                <div class="mock-score">
+                  <div class="score-ring"></div>
+                  <span class="score-label">NPS ↑</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 2: Continuous Discovery -->
+    <div class="case" id="case-discovery">
+      <div class="case-bg case-bg-2"></div>
+      <div class="container case-inner">
+        <div class="case-meta reveal-up">
+          <span class="case-tag">Product Discovery</span>
+          <span class="case-tag">Process Design</span>
+          <span class="case-tag">Leadership</span>
+        </div>
+        <div class="case-content-grid case-content-grid-rev">
+          <div class="case-visual reveal-scale">
+            <div class="case-mockup case-mockup-disc">
+              <div class="mock-screen">
+                <div class="mock-bar"></div>
+                <div class="disc-cards">
+                  <div class="disc-card dc1">Interview</div>
+                  <div class="disc-card dc2">Insight</div>
+                  <div class="disc-card dc3">Opportunity</div>
+                  <div class="disc-card dc4">Solution</div>
+                </div>
+                <div class="disc-arrow">→</div>
+              </div>
+            </div>
+          </div>
+          <div class="case-text">
+            <h3 class="case-title reveal-up">Continuous Discovery<br /><em>Weekly cadence, constant clarity</em></h3>
+            <p class="case-body reveal-up">
+              Introduced and scaled Continuous Discovery across TownSq product teams — from
+              occasional research sprints to a weekly rhythm of user contact that feeds every
+              design decision, including interviews that convert detractors into promoters.
+            </p>
+            <div class="case-outcome reveal-up">
+              <span class="outcome-label">Outcome</span>
+              <span class="outcome-text">Teams shipping with higher confidence and fewer costly pivots</span>
+            </div>
+            <a href="case-discovery.html" class="btn btn-ghost case-link-btn reveal-up magnetic" data-sound="click">Read the full case →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case: Design Review -->
+    <div class="case case-alt" id="case-review">
+      <div class="case-bg case-bg-4"></div>
+      <div class="container case-inner">
+        <div class="case-meta reveal-up">
+          <span class="case-tag">Process</span>
+          <span class="case-tag">Quality</span>
+          <span class="case-tag">Team Development</span>
+        </div>
+        <div class="case-content-grid case-content-grid-rev">
+          <div class="case-visual reveal-scale">
+            <div class="case-mockup case-mockup-review">
+              <div class="mock-screen">
+                <div class="mock-bar"></div>
+                <div class="review-items">
+                  <div class="review-item ri-pass">✓ Visual consistency</div>
+                  <div class="review-item ri-pass">✓ Interaction states</div>
+                  <div class="review-item ri-warn">⚠ Accessibility contrast</div>
+                  <div class="review-item ri-pass">✓ Edge cases covered</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="case-text">
+            <h3 class="case-title reveal-up">Design Review System<br /><em>Quality at every gate</em></h3>
+            <p class="case-body reveal-up">
+              A structured Design Review process that raises the quality bar across all product
+              areas without slowing teams down — critique as a team sport for designers, PMs,
+              and developers.
+            </p>
+            <div class="case-outcome reveal-up">
+              <span class="outcome-label">Outcome</span>
+              <span class="outcome-text">Higher design quality scores and accelerated designer growth</span>
+            </div>
+            <a href="case-review.html" class="btn btn-ghost case-link-btn reveal-up magnetic" data-sound="click">Read the full case →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── LEADERSHIP ─── -->
+  <section class="lead section" id="lead">
+    <div class="container">
+      <p class="section-label reveal-up">Leadership</p>
+      <h2 class="section-title reveal-up">How I build<br />design teams.</h2>
+
+      <div class="lead-quote reveal-fade">
+        <blockquote>
+          "The best design leaders don't just make great products — they create environments
+          where great designers can do the best work of their lives."
+        </blockquote>
+      </div>
+
+      <div class="lead-pillars">
+        <div class="lead-pillar reveal-up magnetic" data-sound="hover">
+          <div class="pillar-num">01</div>
+          <h3>Coaching over doing</h3>
+          <p>I invest in growing designers through 1:1s, feedback, and stretch assignments — not by taking over their problems.</p>
+        </div>
+        <div class="lead-pillar reveal-up magnetic" data-sound="hover">
+          <div class="pillar-num">02</div>
+          <h3>Process as leverage</h3>
+          <p>Good rituals — review, critique, discovery — are the infrastructure that lets teams operate at high quality without heroics.</p>
+        </div>
+        <div class="lead-pillar reveal-up magnetic" data-sound="hover">
+          <div class="pillar-num">03</div>
+          <h3>Radical candor</h3>
+          <p>Direct feedback, delivered with care. I have the hard conversations early so teams don't waste time on misaligned assumptions.</p>
+        </div>
+        <div class="lead-pillar reveal-up magnetic" data-sound="hover">
+          <div class="pillar-num">04</div>
+          <h3>Cross-functional trust</h3>
+          <p>Design earns influence through partnership. I align closely with Product, Engineering, and Operations to make design strategically relevant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <p class="section-label reveal-up">Contact</p>
+      <h2 class="section-title contact-title reveal-up">
+        Let's build something<br />worth noticing.
+      </h2>
+      <p class="contact-sub reveal-up">
+        Open to conversations about design leadership roles, advisory,
+        and collaborations that matter.
+      </p>
+      <div class="contact-links reveal-fade">
+        <a href="mailto:gabrielnovaisux@gmail.com" class="contact-link magnetic" data-sound="click">
+          <span class="contact-link-icon">✉</span>
+          <span>gabrielnovaisux@gmail.com</span>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/gabrielnovaisux" target="_blank" rel="noopener" class="contact-link magnetic" data-sound="click">
+          <span class="contact-link-icon">in</span>
+          <span>LinkedIn</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Gabriel Novais</span>
+      <span class="footer-copy">Product Design Manager · Brazil / Dallas</span>
+      <span class="footer-year">© 2025</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
