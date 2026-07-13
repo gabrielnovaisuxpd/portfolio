@@ -909,6 +909,27 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   color: var(--text-ter);
   line-height: 1.6;
 }
+.case-table-wrap {
+  overflow-x: auto;
+  margin: 12px 0 32px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.case-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.case-table th, .case-table td { text-align: left; padding: 14px 18px; border-bottom: 1px solid var(--border); }
+.case-table tr:last-child td { border-bottom: none; }
+.case-table th {
+  color: var(--text-sec);
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: var(--surface-2);
+}
+.case-table td { color: var(--text-sec); line-height: 1.6; }
+.case-table td strong { color: var(--text); }
+.case-table td.hl { color: var(--accent); font-weight: 600; }
 
 /* ─── LOCK SCREEN ─── */
 .lock-wrap {
