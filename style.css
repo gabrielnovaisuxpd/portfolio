@@ -758,6 +758,86 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 /* ─── MAGNETIC BUTTONS ─── */
 .magnetic { transition-property: transform; transition-duration: 0.3s; transition-timing-function: var(--ease-out); }
 
+/* ─── STORY PAGE ─── */
+.story-accent {
+  font-style: normal;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.story-section { border-top: 1px solid var(--border); }
+.story-timeline {
+  margin-top: 56px;
+  position: relative;
+  padding-left: 0;
+}
+.story-entry {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 32px;
+  padding: 36px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  position: relative;
+}
+.story-entry:last-child { border-bottom: none; }
+@media (max-width: 700px) {
+  .story-entry { grid-template-columns: 1fr; gap: 8px; padding: 28px 0; }
+}
+.story-when {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--text-ter);
+  padding-top: 3px;
+}
+.story-entry-now .story-when { color: var(--accent); }
+.story-what h3 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+.story-place {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-ter);
+  margin-left: 10px;
+  letter-spacing: 0.04em;
+}
+.story-what p {
+  font-size: 15px;
+  color: var(--text-sec);
+  line-height: 1.75;
+  max-width: 640px;
+}
+.story-quotes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 48px;
+}
+@media (max-width: 800px) { .story-quotes { grid-template-columns: 1fr; } }
+.story-quote {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 26px;
+  transition: border-color 0.3s, transform 0.3s var(--ease-spring);
+}
+.story-quote:hover { border-color: rgba(79,142,255,0.3); }
+.story-quote p {
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+.story-quote footer { font-size: 12px; color: var(--text-ter); }
+.story-cta { text-align: center; padding-bottom: 120px; }
+.story-cta .hero-cta { justify-content: center; }
+
 /* ─── CASE PAGES ─── */
 .case-page-hero {
   position: relative;
