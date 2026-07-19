@@ -838,6 +838,42 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .story-cta { text-align: center; padding-bottom: 120px; }
 .story-cta .hero-cta { justify-content: center; }
 
+.lead-pillars-full {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+}
+.lead-pillar-full {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 28px;
+  padding: 32px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.lead-pillar-full:last-child { border-bottom: none; }
+@media (max-width: 700px) {
+  .lead-pillar-full { grid-template-columns: 1fr; gap: 10px; }
+}
+.lead-pillar-full .pillar-num {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent);
+  opacity: 0.5;
+  font-variant-numeric: tabular-nums;
+}
+.lead-pillar-full h3 {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+.lead-pillar-full p {
+  font-size: 15px;
+  color: var(--text-sec);
+  line-height: 1.75;
+  max-width: 640px;
+}
+
 /* ─── CASE PAGES ─── */
 .case-page-hero {
   position: relative;
